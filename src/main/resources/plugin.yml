@@ -1,6 +1,28 @@
 name: BetterCombatLogger
 version: '1.0-SNAPSHOT'
 main: net.saturn.betterCombatLogger.BetterCombatLogger
+description: Advanced combat logger with WorldGuard integration
 api-version: '1.21'
-load: STARTUP
-authors: [ ___Pumpkinn ]
+load: POSTWORLD
+authors:
+  - ___Pumpkinn
+  - Saturn_Dev
+  - Vishini
+
+dependencies:
+  server:
+    WorldGuard:
+      load: BEFORE
+      required: true
+      join-classpath: true
+
+permissions:
+  bettercombatlogger.use:
+    description: Allows use of the /combat command
+    default: true
+  bettercombatlogger.bypass:
+    description: Bypass combat tagging
+    default: op
+  bettercombatlogger.admin:
+    description: Admin permissions for the plugin
+    default: op
