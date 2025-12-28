@@ -1,0 +1,6 @@
+name: BetterCombatLogger
+version: '1.0-SNAPSHOT'
+main: net.saturn.betterCombatLogger.BetterCombatLogger
+api-version: '1.21'
+load: STARTUP
+authors: [ ___Pumpkinn ]
